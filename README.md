@@ -18,12 +18,12 @@ Most interestingly, this further aggregates to the entire team's performance. I 
 ### Purpose
 The goal of the project is simple: determine the probability of the home team winning for each game per week and use this coupled with moneyline information to optimize the betting strategy. We may ask, "Why only bet on money lines?"* This is primarily because it lessens risk compared to betting on the spread, and it is directly correlated with the results of the neural network model.
 
-There is also one glaring caveat to convince others of my passion for the project itself: **_Sports betting is illegal in the state of Wisconsin_** where I currently reside. This does not stop me from "paper trading" so to say.
+There is also one glaring caveat to convince others of my passion for the project itself: **_Sports betting is illegal in the state of Wisconsin_**, where I currently reside. This does not stop me from "paper trading", so to say.
 
 * Again, please see the _Future Implementations_ section for plans to include other popular bets
 
 ### Results
-I proudly have two aspects of my work to share: the model I've constructed is performing with an accuracy of over 65%, and the risk mitigation strategy has allowed for an average return of $180 over ten week of the regular 2021 football season. As to not bamboozle readers, it should be important to note the returns have a standard deviation of about $274. An otherwise very scary statistic, should the overall bankroll not total $1625.
+I proudly have two aspects of my work to share: the model I've constructed is performing with an accuracy of over 65%, and the risk mitigation strategy has allowed for an average return of $180 over ten weeks of the regular 2021 football season. As to not bamboozle readers, it should be important to note the returns have a standard deviation of about $274. An otherwise very scary statistic, should the overall bankroll not total $1625.
 
 Again, I'm very proud of my work so far. And I look forward to greater collaboration and development to further improve the process for the 2022 football season.
 
