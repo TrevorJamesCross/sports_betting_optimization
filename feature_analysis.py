@@ -1,7 +1,7 @@
 """
 Sports Betting Project: Feature Analysis
 Author: Trevor Cross
-Last Updated: 01/20/22
+Last Updated: 01/30/22
 
 Analyze features using Pearson Correlation, p-value, and F-score methods.
 """

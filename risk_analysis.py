@@ -1,7 +1,7 @@
 """
 Sports Betting Project: Risk Analysis
 Author: Trevor Cross
-Last Updated: 01/22/22
+Last Updated: 01/30/22
 
 Get team stats and construct differential data for the week. Run this through
 the neural network prediction to obtain a percent chance of home victory. Given
@@ -41,10 +41,13 @@ moneylines_df = scrape_moneylines(url)
 
 # define season and week
 current_year = 2021
-current_week = 20
+current_week = 22
 
 # get team stats
 team_stats_df = collect_team_stats(current_year, current_week)
+
+# remove last feature
+team_stats_df = team_stats_df.drop(columns=team_stats_df.columns[-1])
 
 # build differential df
 diffs_df = pd.DataFrame(index=moneylines_df.index, columns=team_stats_df.columns).fillna(0.0)
@@ -53,7 +56,7 @@ for matchup in moneylines_df.index:
     diffs_df.loc[matchup] = team_stats_df.loc[home_abbr] - team_stats_df.loc[away_abbr]
 
 # normalize and reshape differential data
-scaler_path = "/home/tjcross/sports_betting_proj/saved_scaler"
+scaler_path = "/home/tjcross/sports_betting_optimization/saved_scaler"
 scaler = joblib.load(scaler_path)
 
 diffs_data = scaler.transform(diffs_df.to_numpy()).reshape(diffs_df.shape[0],1,diffs_df.shape[1])
@@ -63,7 +66,7 @@ diffs_data = scaler.transform(diffs_df.to_numpy()).reshape(diffs_df.shape[0],1,d
 # ---------------------
 
 # define neural network model path
-model_path = "/home/tjcross/sports_betting_proj/saved_model"
+model_path = "/home/tjcross/sports_betting_optimization/saved_model"
 
 # load saved model & automatically compile
 model = load_model(model_path, compile=True)

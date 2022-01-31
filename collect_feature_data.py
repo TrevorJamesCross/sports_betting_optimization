@@ -1,7 +1,7 @@
 """
 Sports Betting Project: Collect Feature Data
 Author: Trevor Cross
-Last Updated: 01/20/22
+Last Updated: 01/30/22
 
 Collect NFL game data and engineer differential features for neural network
 training. Data is gathered using the Sports Reference API, sportsipy.
@@ -150,7 +150,7 @@ def collect_nfl_data(seasons):
                 stats_df.loc[abbr]['3rd_dn_rate'] = tots_df.loc[abbr]['3rd_dn_con'] / tots_df.loc[abbr]['3rd_dn_att']
                 stats_df.loc[abbr]['4th_dn_rate'] = tots_df.loc[abbr]['4th_dn_con'] / tots_df.loc[abbr]['4th_dn_att']
     
-    return final_df.fillna(0.0).rename({0:"home_win"}, inplace=True)
+    return final_df.fillna(0.0).rename(columns={0:"home_win"})
 
 # ----------------
 # ---Run Script---
