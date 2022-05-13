@@ -23,7 +23,9 @@ There is also one glaring caveat to convince others of my passion for the projec
 * Again, please see the _Future Implementations_ section for plans to include other popular bets
 
 ### Results for 2021
-I proudly have two aspects of my work to share: the model I've constructed is performing with an accuracy of over 65%, and the risk mitigation strategy has allowed for an average return of $180/week over ten weeks of the regular 2021 football season. As to not bamboozle readers, it should be important to note the returns have a standard deviation of about $274. An otherwise very scary statistic, should the overall bankroll not total $1625.
+I proudly have two aspects of my work to share: the model I've constructed is performing with an accuracy of about 59%, and the risk mitigation strategy has allowed for an average return of $110/week over ten weeks of the regular 2021 football season. As to not bamboozle readers, it should be important to note the returns have a standard deviation of about $333. An otherwise very scary statistic, should the overall bankroll not total $1110.
+
+https://github.com/TrevorJamesCross/sports_betting_optimization/blob/main/2021_results.png
 
 Again, I'm very proud of my work so far. And I look forward to greater collaboration and development to further improve the process for the 2022 football season.
 
